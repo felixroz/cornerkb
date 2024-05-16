@@ -28,14 +28,14 @@
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5   |   |  6   |  7  |  8  |  9  |  0  | BKSP |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5  |   | LFT  | DWN |  UP | RGT |COLON|      |
-// | SHFT | TAB |SHFT |LCTRL|     |BT_CLR|   |      |     |     |     |     |      |
-//                    | GUI |     | SPC  |   | BKSP |     | DEL |
+// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5  |   | LFT  | DWN |  UP | RGT |  :  |      |
+// | SHFT | TAB |SHFT |LCTRL| ALT |BT_CLR|   |      |     |     |     |  ?  |      |
+//                    | GUI |     | ESC  |   | BKSP |     | DEL |
                         bindings = <
    &kp TAB    &kp N1       &kp N2       &kp N3          &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0    &kp BSPC
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2    &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans    &trans
-   &kp LSHFT  &kp TAB      &kp LSHFT    &kp LCTRL       &trans       &bt BT_CLR     &trans   &trans   &trans &trans    &kp COLON &trans
-                                           &kp LGUI     &trans       &kp SPACE      &kp BSPC  &trans   &kp DEL
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2    &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp COLON    &trans
+   &kp LSHFT  &kp TAB      &kp LSHFT    &kp LCTRL       &kp ALT       &bt BT_CLR     &trans   &trans   &trans &trans    &kp QMARK &trans
+                                           &kp LGUI     &trans       &kp ESC      &kp BSPC  &trans   &kp DEL
                         >;
                 };
 
