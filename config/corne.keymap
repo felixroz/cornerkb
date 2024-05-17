@@ -13,13 +13,13 @@
         compatible = "zmk,combos";
         combo_homerow_right_click {
             timeout-ms = <50>;
-            layers = <1>
+            layers = <1>;
             key-positions = <31>;
             bindings = <&kp LGUI &kp LSHFT &kp SPACE>;
         };
         combo_homerow_scroll {
             timeout-ms = <50>;
-            layers = <1>
+            layers = <1>;
             key-positions = <32>;
             bindings = <&kp LGUI &kp LSHFT &kp J>;
         };
